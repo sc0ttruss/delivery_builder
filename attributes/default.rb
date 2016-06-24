@@ -24,12 +24,12 @@ node.override['delivery_build']['base_filename_url'] = 'file:///mnt/share/chef/'
 
 # Stuff related to credentials
 node.override['delivery_build']['secrets_type'] = 'local-files'
-node.override['delivery_build']['chef_username'] = 'delivery'
+node.override['delivery_build']['chef_username'] = 'srv-delivery'
 
 # Delivery and SUpermarket URL's to retrieve their certificates
 node.override['delivery_build']['url']['chef'] = 'chef.myorg.chefdemo.net'
 node.override['delivery_build']['url']['delivery'] = 'delivery.myorg.chefdemo.net'
 node.override['delivery_build']['url']['supermarket'] = 'supermarket.myorg.chefdemo.net'
-
+node.override['delivery_build']['organisation'] = 'myorg'
 # assume this node has alredy been bootstrapped
 node.override['delivery_build']['url_chef']  = 'https://chef.myorg.chefdemo.net'
