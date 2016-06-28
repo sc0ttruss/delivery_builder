@@ -32,3 +32,5 @@ node.override['delivery_build']['url']['supermarket'] = 'supermarket.myorg.chefd
 node.override['delivery_build']['organisation'] = 'myorg'
 # assume this node has alredy been bootstrapped
 node.override['delivery_build']['url_chef']  = 'https://chef.myorg.chefdemo.net'
+# set the default source for gems packages
+default['delivery_build']['gemrc_source'] = 'http://gems.rubyforge.org'
