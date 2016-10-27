@@ -56,7 +56,7 @@ suites:
   - name: default
     data_bag_path: "test/integration/data_bags"
     run_list:
-      - recipe[delivery_builder::default]
+      # - recipe[delivery_builder::default]
     attributes:
       delivery_builder:
         secrets_type: "databag"
